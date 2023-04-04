@@ -78,7 +78,7 @@
     internal static void StartProcess(string options)
     {
       string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-      string exePath = Path.GetFullPath(Path.Combine(path, @"Everything.exe"));
+      string exePath = Path.GetFullPath(Path.Combine(path, Environment.Is64BitProcess ? "Everything64.exe" : "Everything32.exe"));
 
       System.Diagnostics.Process.Start(exePath, options);
     }
