@@ -2,6 +2,7 @@
 EverythingNet\.Tests/bin/
 EverythingNet\.Tests/obj/
 EverythingNet/bin/x64/
+EverythingNet/bin/x86/
 EverythingNet/obj/
 EverythingNet\.Bench/bin/
 EverythingNet\.Bench/obj/
