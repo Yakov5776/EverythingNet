@@ -25,10 +25,10 @@
       }
     }
 
-#if WIN32
-    private const string EverythingDLL = EverythingDLL;
-#else
-    private const string EverythingDLL = "Everything64.dll";
+#if x86
+        private const string EverythingDLL = "Everything32.dll";
+#elif x64
+        private const string EverythingDLL = "Everything64.dll";
 #endif
 
     private const int EVERYTHING_OK = 0;
